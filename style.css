@@ -6,46 +6,112 @@
 }
 
 .container-lg{
-    background-color: lightgrey;
+    background-color:rgb(193, 235, 236);
     margin-left: 100px;
     margin-right: 100px;
-    height: 500px;
-    width:87%
+    margin-bottom: 10px;
+    height: 650px;
+    width:80%
 }
-
+.navbar-nav{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
 .navbar-brand{
     background-color:mediumaquamarine;
     height: 60px;
     width: 150px;
     font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#outer_contain{
+body {
+    padding-top:5px;
+    padding-bottom: 15px;
+}
+
+#wrapper {
+    padding-left: 100px;
+    padding-right: 250px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#sidebar-menu {
     
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 0px;
-    background-color:gray;
+    position: fixed;
+    right: 250px;
+    width: 30%;
+    height: 400px;
+    margin-top: 0px;
+    margin-right:-70px;
+    margin-left: 1000px;
+    overflow-y: auto;
+    background-color:orangered;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#page-content {
+    width: 32%;
+    position: absolute;
+    text-align: left;
+    height: 400px;
+ 
+}
+
+.img-fluid {
+    max-width: 90%
+       
+}
+
+.src_css {
+    padding-bottom: 10px;
+}
+
+#lp-container{
+    padding-left: 0px;
+    margin-top: 50px;
+    width: 60%;
+    height: 400px;
+    padding-top: 40px;
+    padding-right: 300px;
+    background-color: orchid;
+}
+
+#data_contain{
     
+    margin-top: 50px;
+    margin-bottom: 700px;
+    background-color:white;
+    height:500px;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 18;
     margin-left: 80px;
-    color: lightcoral;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:rgb(2, 90, 92);
 }
 p {
     margin-left: 80px;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #city_table {
-    width: 85%;
-    height: 700px;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    width: 88%;
+    height: 400px;
+    margin-right: 10px;
+    margin-bottom: 30px;
     margin-left: 80px;
     background-color: rgb(248, 252, 252);
-    
+    padding-top: 0px;
 }
 
 #city_tab_html {
@@ -55,15 +121,35 @@ p {
 
 th {
     text-align: left;
-    background-color:lightgray;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15;
+    background-color:rgb(167, 237, 238);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
     
 }
-tr {
-    font-size: 10;
-    height: 0.5px;
+thead{
+    padding: 0px;
+}
+#city_tab_html tr {
+    font-size: 10px;
+    height: fit-content;
 }
 td {
     padding:10px;
+}
+
+#comp_container{
+    background-color:rgb(237, 248, 248);
+    margin-top: 25px;
+    height: 530px;
+}
+
+#comp_header{
+    font-size: 10px;
+}
+
+#stat_image{
+    width: 300px;
+    height: 190px;
+    
+    
 }

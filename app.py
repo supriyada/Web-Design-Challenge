@@ -22,5 +22,5 @@ html_string = """
 # OUTPUT AN HTML FILE
 htmlfile = "city_table.html"
 with open(htmlfile, "w") as file_out:
-    file_out.write(html_string.format(table=df.to_html(classes="table table-hover table-striped table-responsive", index=False,table_id='city_tab_html')))
+    file_out.write(html_string.format(table=df.to_html(classes="table table-hover table-striped table-responsive", border=0,index=False,table_id='city_tab_html')))
     
