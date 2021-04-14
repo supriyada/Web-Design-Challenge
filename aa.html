@@ -1,36 +1,137 @@
-<html>
-<head>
-<title>Bootstrap Grid</title>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-</head>
-<style>
-.row-margin-05 { margin-top: 0.5em; }
-.row-margin-10 { margin-top: 1.0em; }
-.row-margin-20 { margin-top: 2.0em; }
-.row-margin-30 { margin-top: 3.0em; }
-</style>
-<body>
-<div class="container">
-  <div class="row row-margin-05" style='background:yellow;'>
-	  <div class="col-md-6">
-      <img src="Resources/assets/images/Fig1.png" class="img-fluid " alt="Responsive image">
-    </div>
-    <div class="col-md-6">
-      <img src="Resources/assets/images/Fig2.png" class="img-fluid " alt="Responsive image">
-    </div>
-  </div>
-  <div class="row row-margin-05" style='background:skyblue;'>
-	   <h1>Row 2</h1>
-  </div>
-  <div class="row row-margin-05" style='background:gray;'>
-	   <h1>Row 3</h1>
-  </div>
-  <div class="row row-margin-05" style='background:skyblue;'>
-	   <h1>Row 4</h1>
-  </div>
-</div>
-</body>
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Landing Page</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container-lg">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light " id='nav_bar'>
+                <a class="navbar-brand align-text-center" href="index.html">Latitude</a>
+                <button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto justify-content-end">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plots
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                              </div>
+                          </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="comparison.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+           
+            
+            <div class="row">
+              <div class="col-6 col-s-9">
+                <div class="container-lg" id="wrapper1">
+                  <div class="content">
+                    <div id="main_content">
+                      <h1>Summary: Latitude Vs X</h1>
+                      <hr style="height:10px;width:100%;text-align:left;margin-left:0">
+                        <div class="square">
+                          <div>
+                            <img id="max_temp_image" src="Resources/assets/images/Fig1.png" alt="Max Temperature">
+                          </div>
+                          <p id="main_content_para"><br>The purpose of this project was to analyse how weather changes as you get closer
+                            to the equator. To accomplish this analysis, we first pulled data from OpenWeatherMap API to assemble
+                            a dataset on over 500 cities. <br><br> After assembling the dataset, we used Matplotlib to plot various 
+                            aspects of weather vs latitude. Factors we looked at included: temperature, cloudiness, wind speed and humidity.
+                            This site provides the source data and visulaizations created as part of the analysis, as well as the explanations
+                            and descriptions of any trends and correlations witnessed.<br>
+                          </p>
+                        </div>
+                        </div>
+                    </div>
+                  </div>  
+              </div>
+                <div class="col-6 col-s-12">
+                  <div class="container-lg" id="wrapper2">
+                    <div class="sidebar">
+                        <h3>Visualizations</h3>
+                        <hr>
+                        
+                      <ul class="sidebar-nav nav navbar-inverse">
+                        
+                        <div class="row g-15 row-cols-lg-2" id="src_css">
+                            <div class="row row-margin-05">
+                                  <div class="col-md-6">
+                                    <a href="max_temp.html">
+                                        
+                                        <img src="Resources/assets/images/Fig1.png" class="img-fluid " alt="Responsive image">
+                                        <div class="middle">
+                                          <div class="text">Max Temperature</div>
+                                        </div>
+                                    </a>
+                                  </div>
+                                  <hr>
+                                    <div class="col-md-6">
+                                      <a href="humidity.html">
+                                      <img src="Resources/assets/images/Fig2.png" class="img-fluid " alt="Responsive image">
+                                      <div class="middle">
+                                        <div class="text">Humidity</div>
+                                      </div>
+                                    </a>
+                                    </div>
+                            </div>
+                            <hr>
+                            <div class="row row-margin-05">
+                                <div class="col-md-6">
+                                  <a href="cloudiness.html">
+                                  <img src="Resources/assets/images/Fig3.png" class="img-fluid " alt="Responsive image">
+                                  <div class="middle">
+                                    <div class="text">Cloudiness</div>
+                                  </div>
+                                </a>
+                                </div>
+                                <hr>
+                                <div class="col-md-6">
+                                  <a href="wind_speed.html">
+                                  <img src="Resources/assets/images/Fig4.png" class="img-fluid " alt="Responsive image">
+                                  <div class="middle">
+                                    <div class="text">Wind Speed</div>
+                                  </div>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                      
+                      </ul>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>                
+              </div>  
+                  
+              
+            </div>
+            
+              
+                
+        </div>         
+    </body>
 </html>

@@ -14,6 +14,7 @@
     width:80%
 }
 .navbar-nav{
+    background-color: bisque;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
@@ -30,31 +31,88 @@ body {
     padding-bottom: 15px;
 }
 
-#wrapper {
-    padding-left: 100px;
-    padding-right: 250px;
+#wrapper1 {
+    padding-left: 0px;
+    width: 90%;
+    background-color: rgb(247, 240, 240);
+    height: 500px;
+    margin-top: 30px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
-#sidebar-menu {
+#wrapper2 {
+    padding-right: 0px;
+    width: 80%;
+    background-color: rgb(247, 240, 240);
+    height: 500px;
+    margin-top: 30px;
     
-    position: fixed;
-    right: 250px;
-    width: 30%;
-    height: 400px;
-    margin-top: 0px;
-    margin-right:-70px;
-    margin-left: 1000px;
-    overflow-y: auto;
-    background-color:orangered;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
+.sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+.col-md-6:hover .img-fluid {
+    opacity: 0.5;
+  }
+
+.text {
+    background-color:bisque;
+    color:black;
+    font-size: 10px;
+    
+  }
+
+.col-md-6:hover .middle {
+    opacity: 1;
+  }
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  } 
+
+.img-fluid{
+    opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+#max_temp_image{
+    width: 270px;
+    height: 200px;
+    margin-right: 20px;
+    padding-left: 30px;
+    float: left; 
+    margin: 5px;
+}
+
+
+#main_content_para {
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+
 
 #page-content {
     width: 32%;
@@ -155,5 +213,33 @@ td {
 }
 
 .row-margin-05 { 
-    margin-left: 7.0em; 
+    
+    margin-left: 30px; 
 }
+
+@media (max-width: 480px) {
+    .row-margin-05 { 
+        padding-left: 0px;
+        margin-left: 5px; 
+    }
+    #comp_container{
+        background-color:rgb(237, 248, 248);
+        margin-top: 25px;
+        height:900px;
+    }
+    
+    
+    #stat_image{
+        width: 300px;
+        height: 190px;
+        
+        
+    }
+    .navbar-brand{
+        background-color: brown;
+        font-size: small;
+        width: 90%;
+    }
+}
+
+
