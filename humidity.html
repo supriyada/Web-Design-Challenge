@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Landing Page</title>
+        <title>Humidity</title>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -34,7 +34,7 @@
                                 <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
                               </div>
                           </li>
-                        <li class="nav-item active">
+                        <li class="nav-item ">
                           <a class="nav-link" href="comparison.html">Comparison</a>
                         </li>
                         <li class="nav-item">
@@ -43,11 +43,100 @@
                     </ul>
                 </div>
             </nav>
-       
-
            
-
-    
+            
+            <div class="row">
+              <div class="col-md-6">
+                <div class="container-lg" id="wrapper1">
+                  
+                            <h3>Humidity</h3>
+                            <hr style="height:10px;width:100%;text-align:left;margin-left:0">
+                            
+                          <div>
+                                <a href="Resources/assets/images/Fig2.png">
+                                <img id="visual_img" src="Resources/assets/images/Fig2.png" alt="Humidity">
+                                </a>
+                          </div>
+                          <p id="temp_content_para"></br>The humidity is different across the latitude. More interestingly, however, 
+                            is the fact that the southern hemisphere trends to be more humid than the nothern 
+                            hemisphere. As we know the fact that humidity depends on temperature, they both behave in the same way., that is, southern
+                            hemisphere tends to be more influenced by humidity.
+                            <br>
+                          </p>
+                        
+                  </div>  
+              </div>
+                <div class="col-md-6">
+                  <div class="container-lg" id="wrapper2">
+                    <div class="sidebar">
+                        <div class="row">
+                            <div class="col-md-12">
+                            <h3>Visualizations</h3>
+                            <hr>
+                            </div>
+                        </div>
+                      <ul class="sidebar-nav nav navbar-inverse">
+                        
+                        <div class="row " id="src_css">
+                            <div class="row ">
+                                  <div class="col-md-6">
+                                    
+                                    <a href="max_temp.html">
+                                        
+                                        <img src="Resources/assets/images/Fig1.png" class="img-fluid "  alt="Responsive image">
+                                        <div class="middle">
+                                          <div class="text">Max Temperature</div>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                  </div>
+                                  
+                                    <div class="col-md-6">
+                                      <a href="humidity.html">
+                                      <img src="Resources/assets/images/Fig2.png" class="img-fluid " alt="Responsive image">
+                                      <div class="middle">
+                                        <div class="text">Humidity</div>
+                                      </div>
+                                    </a>
+                                    <hr>
+                                    </div>
+                                    
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                  <a href="cloudiness.html">
+                                  <img src="Resources/assets/images/Fig3.png" class="img-fluid " alt="Responsive image">
+                                  <div class="middle">
+                                    <div class="text">Cloudiness</div>
+                                  </div>
+                                </a>
+                                </div>
+                                <hr>
+                                <div class="col-md-6">
+                                  <a href="wind_speed.html">
+                                  <img src="Resources/assets/images/Fig4.png" class="img-fluid " alt="Responsive image">
+                                  <div class="middle">
+                                    <div class="text">Wind Speed</div>
+                                  </div>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                      
+                      </ul>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>                
+              </div>  
+                  
+              
+            </div>
+            
+              
+                
         </div>         
     </body>
 </html>
