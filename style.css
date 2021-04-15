@@ -306,7 +306,54 @@ td {
     background-color: blanchedalmond;
     font-size: 20px;
 }
+h1{
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#main_content_para{
+    font-size: 12px;
+}
+
+#wrapper1 {
+    padding-left: 0px;
+    width: 100%;
+    background-color: rgb(247, 240, 240);
+    font-size: 8px;  
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-color:white;
+    margin-top: 25px;
+    height:400px;
+    width: 100%;
+    margin-left: 0px;
+}
+#wrapper2 {
+    padding-right: 0px;
+    width: 80%;
+    background-color:white;
+    height: 200px;
+    margin-top: 30px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.img-fluid{
+    width: 80px; 
+    height: 60px;
+
+}
+.sidebar .col-md-6 {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 100%;
     
+    justify-content: space-evenly;
+  }
 }
 
 
