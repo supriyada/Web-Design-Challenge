@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 input_file = os.path.join('Resources', 'cities.csv')
-print(input_file)
+
 # creating the dataframe
 df = pd.read_csv(input_file)
 
