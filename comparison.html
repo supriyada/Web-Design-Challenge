@@ -19,7 +19,7 @@
     <body>
         
         <div class="container-lg">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light " id='nav_bar'>
+            <nav class="navbar navbar-expand-lg navbar-light  navbar-custom">
                 <a class="navbar-brand align-text-center" href="index.html">Latitude</a>
                 <button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -48,38 +48,54 @@
             </nav>
             
             <div class="container mr-auto" id="comp_container">
-                
-                <h3>Comparison: Latitude Vs X</h3>
-                <hr>
-                <p>Click on any plot to get in-depth analysis.</p>
-                <!--Grid-->
                 <div class="row">
-                    <div class="col-sm-3 col-md-6 row-margin-05 col-lg-5">
+                    <div class="col-md-12">
+                        <h3>Comparison: Latitude Vs X</h3>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Click on any plot to get in-depth analysis.</p>
+                    </div>
+                </div>    
+                    <!--Grid-->
+                <div class="row">
+                    <div class="row align-items-right">
+                    <!--<div class="col-sm-6 col-md-6 row-margin-05 col-lg-6">-->
+                    <div class="col-md-6">
                         <h3 id="comp_header">Vs Max Temperature</h3>
                         <a href="max_temp.html">
                         <img id="stat_image" src="Resources/assets/images/Fig1.png" class="img-fluid " alt="Responsive image">
                         </a>
+                        <hr>
                     </div>
-                    <div class="col-sm-9 col-md-6 row-margin-05 col-lg-6">
+                    <div class="col-md-6">
                         <h3 id="comp_header">Vs Humidity</h3>
                         <a href="humidity.html">
                         <img id="stat_image" src="Resources/assets/images/Fig2.png" class="img-fluid " alt="Responsive image">
                         </a>
+                        <hr>
                     </div>
                 </div>
+            </div>
                 <div class="row">
-                    <div class="col-sm-3 col-md-6 row-margin-05 col-lg-5">
+                    <div class="row align-items-right">
+                    <div class="col-md-6">
                         <h3 id="comp_header">Vs Cloudiness</h3>
                         <a href="cloudiness.html">
                         <img id="stat_image" src="Resources/assets/images/Fig3.png" class="img-fluid " alt="Responsive image">
                         </a>
+                        <hr>
                     </div>
-                    <div class="col-sm-9 col-md-6 row-margin-05 col-lg-6">
+                    <div class="col-md-6">
                         <h3 id="comp_header">Vs Wind Speed</h3>
                         <a href="wind_speed.html">
                         <img id="stat_image" src="Resources/assets/images/Fig4.png" class="img-fluid " alt="Responsive image">
                         </a>
+                        
                     </div>
+                </div>
                 </div>
             </div>
            

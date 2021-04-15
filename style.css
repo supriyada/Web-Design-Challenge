@@ -1,8 +1,31 @@
-.navbar{
-    
-    
+
+
+.navbar-custom {
+    background-color:grey;
     margin-top: 20px;
     padding-left: 5px;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+    height: 60px;
+    width: 150px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    font-size: 25px;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
 }
 
 .container-lg{
@@ -13,18 +36,8 @@
     height: 650px;
     width:80%
 }
-.navbar-nav{
-    background-color: bisque;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-}
-.navbar-brand{
-    background-color:mediumaquamarine;
-    height: 60px;
-    width: 150px;
-    font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
+
 
 body {
     padding-top:5px;
@@ -123,7 +136,7 @@ body {
 }
 
 .img-fluid {
-    max-width: 90%
+    max-width: 100%
        
 }
 
@@ -198,6 +211,7 @@ td {
 #comp_container{
     background-color:rgb(237, 248, 248);
     margin-top: 25px;
+    width: 70%;
     height: 530px;
 }
 
@@ -206,40 +220,93 @@ td {
 }
 
 #stat_image{
-    width: 300px;
-    height: 190px;
+    width: 250px;
+    height: 170px;
     
     
 }
-
-.row-margin-05 { 
+.row{
+    justify-content:space-evenly;
     
-    margin-left: 30px; 
 }
-
-@media (max-width: 480px) {
-    .row-margin-05 { 
-        padding-left: 0px;
-        margin-left: 5px; 
+@media (max-width: 600px) {
+    .container-lg{
+        background-color: white;
+        height: fit-content;
+        margin-left: 30px;
+    }
+     h3 {
+        font-size: 18px;
+        margin-left: 0px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color:rgb(2, 90, 92);
+    }
+    p {
+        margin-left: 10px;
+        font-size: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #data_contain{
+        margin-left: 10px;
+        margin-top: 50px;
+        margin-bottom: 700px;
+        background-color:white;
+        height:700px;
+    }
+    #city_table {
+        width: 100%;
+        max-height: 100%;
+        margin-left: 20px;
+        padding-top: 0px;
     }
     #comp_container{
-        background-color:rgb(237, 248, 248);
+        text-align: left;
+        background-color:white;
         margin-top: 25px;
         height:900px;
+        width: 100%;
+        margin-left: 0px;
     }
-    
-    
+    #comp_container p{
+        text-align: left;
+    } 
+    #comp_header{
+        font-size: 12px;
+        text-align: center;
+    }
     #stat_image{
-        width: 300px;
-        height: 190px;
-        
+      margin-left: 30px;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .navbar-custom {
+        background-color:aquamarine;
         
     }
-    .navbar-brand{
-        background-color: brown;
-        font-size: small;
-        width: 90%;
+
+    .row{
+        justify-content:space-around;
+        
     }
+    
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text {
+    color:black;
+    height: 50px;
+    width: 150px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    /* change the link color */
+    .navbar-custom .navbar-nav .nav-link {
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: blanchedalmond;
+    font-size: 20px;
+}
+    
 }
 
 
