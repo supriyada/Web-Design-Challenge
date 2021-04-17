@@ -64,7 +64,7 @@ body {
     background-color: rgb(247, 240, 240);
     height: 500px;
     margin-top: 30px;
-    
+    justify-content: space-around;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -76,10 +76,10 @@ body {
     color: white;
   }
 
-  #src_css .col-md-6:hover .img-fluid {
+  #src_css .col-sm-3:hover .img-fluid {
     opacity: 0.5;
   }
-  #comp_img .col-md-6:hover .img-fluid {
+  #comp_img .col-sm-3:hover .img-fluid {
     opacity: 0.5;
   }
 
@@ -89,10 +89,10 @@ body {
     font-size: 10px;
     
   }
-  #comp_img .col-md-6:hover .middle {
+  #comp_img .col-sm-3:hover .middle {
     opacity: 1;
   }
-#src_css .col-md-6:hover .middle {
+#src_css .col-sm-3:hover .middle {
     opacity: 1;
   }
 .middle {
@@ -110,35 +110,40 @@ body {
     position: relative;
     opacity: 1;
   display: block;
-  width: 230px;
+  max-width: 90%;
+  padding-left: 10px;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+  object-fit: contain;
 }
+
 
 #max_temp_image{
     width: 270px;
-    height: 200px;
+    height: auto;
     margin-right: 20px;
     padding-left: 30px;
     float: left; 
     margin: 5px;
+    object-fit: contain;
 }
 
 #visual_img{
     position: relative;
     width: 400px;
-    height: 300px;
+    height: auto;
     padding-top: 0px;
-    
+    object-fit: contain;
     margin-left: 50px;
 }
 
 #main_content_para {
     text-align: justify;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 14px;
     margin-right: 10px;
+    position:relative;
 }
 #wrapper1 #temp_content_para{
     text-align: justify;
@@ -157,10 +162,7 @@ body {
  
 }
 
-.img-fluid {
-    max-width: 100%
-       
-}
+
 
 .src_css {
     padding-bottom: 10px;
@@ -240,24 +242,22 @@ td {
 
 #comp_header{
     font-size: 10px;
+    text-align: center;
 }
 
 #stat_image{
     width: 250px;
-    height: 170px;
-    
-    
+    height: auto;
+    object-fit: contain;
+    margin-left: 70px;
+    margin-right: 50px;
 }
-.row{
-    justify-content:space-evenly;
-    
-}
-
 
 @media (max-width: 576px) {
 
     .col-sm-3{
         margin-left: 0px;
+        margin-right: 0px;
     }
     .container-lg{
         background-color: white;
@@ -307,17 +307,14 @@ td {
     #stat_image{
       margin-left: 30px;
       max-width: 100%;
-      max-height: 100%;
+      height:auto;
+      object-fit: contain;
     }
     .navbar-custom {
         background-color:aquamarine;
         
     }
 
-    .row{
-        justify-content:space-around;
-        
-    }
     
     .navbar-custom .navbar-brand,
     .navbar-custom .navbar-text {
@@ -372,16 +369,16 @@ h1{
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-.img-fluid{
-    width: 100px; 
-    height: 100px;
 
-}
+
 .sidebar .col-sm-3 {
     
     -ms-flex: 25%;
     flex: 25%;
-    max-width: 100%;
+    position: relative;
+    max-width: 100px; 
+    height: auto;
+    object-fit: contain;
     
     justify-content: space-evenly;
   }
@@ -390,9 +387,13 @@ h1{
     font-size: 10px;
 }
 #visual_img{
-    margin-top: 0px;
+    position: relative;
+    width: 400px;
+    height: auto;
+    padding-top: 0px;
+    object-fit: contain;
+    margin-left: 50px;
 }
-
 
 }
 
