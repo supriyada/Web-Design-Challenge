@@ -305,6 +305,7 @@ td {
         text-align: center;
     }
     #stat_image{
+        position: relative;
       margin-left: 30px;
       max-width: 100%;
       height:auto;
@@ -376,13 +377,15 @@ h1{
     -ms-flex: 25%;
     flex: 25%;
     position: relative;
-    max-width: 100px; 
+    max-width: 125px; 
     height: auto;
     object-fit: contain;
+    padding:0px;
+    margin: 0px;
     
-    justify-content: space-evenly;
   }
-  #wrapper1 #temp_content_para{
+
+#wrapper1 #temp_content_para{
     
     font-size: 10px;
 }
